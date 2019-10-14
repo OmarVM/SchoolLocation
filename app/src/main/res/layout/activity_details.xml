@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".views.Details">
+
+    <fragment
+        android:id="@+id/map_desc"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".views.Details" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/space_main_content_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/map_desc">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_main_content_item">
+
+            <ImageView
+                android:layout_width="@dimen/img_item_location_width"
+                android:layout_height="@dimen/img_item_location_height"
+                android:src="@drawable/ic_school" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/school_name_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/text_distance_left"
+                    android:layout_marginRight="@dimen/text_distance_right"
+                    android:text="@string/exemple_name"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="20sp"
+                    android:paddingBottom="@dimen/space_main_content_item"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_main_content_item">
+
+            <ImageView
+                android:layout_width="@dimen/img_item_location_width"
+                android:layout_height="@dimen/img_item_location_height"
+                android:src="@drawable/ic_map" />
+
+            <TextView
+                android:id="@+id/school_address_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_distance_left"
+                android:layout_marginRight="@dimen/text_distance_right"
+                android:text="@string/exemple_address"
+                android:textColor="@color/textSecundary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/space_main_content_item">
+
+            <ImageView
+                android:layout_width="@dimen/img_item_location_width"
+                android:layout_height="@dimen/img_item_location_height"
+                android:src="@drawable/ic_star" />
+
+            <TextView
+                android:id="@+id/school_rating_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_distance_left"
+                android:layout_marginRight="@dimen/text_distance_right"
+                android:text="@string/exemple_rating"
+                android:textColor="@color/textSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/img_item_location_width"
+                android:layout_height="@dimen/img_item_location_height"
+                android:src="@drawable/ic_place" />
+
+            <TextView
+                android:id="@+id/school_distance_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/text_distance_left"
+                android:layout_marginRight="@dimen/text_distance_right"
+                android:text="@string/exemple_distance"
+                android:textColor="@color/textSmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exemple_distance_mesure"
+                android:textColor="@color/textSmall" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

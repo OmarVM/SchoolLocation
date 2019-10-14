@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_main_content_item"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    app:cardElevation="@dimen/cardview_default_elevation">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_school"
+            android:layout_width="@dimen/img_item_store_width"
+            android:layout_height="@dimen/img_item_store_height"
+            android:paddingTop="@dimen/space_main_content_item"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_main_content_item">
+
+            <TextView
+                android:id="@+id/school_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/exemple_name"
+                android:textColor="@color/textPrimary"/>
+
+            <TextView
+                android:id="@+id/school_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="@string/exemple_address"
+                android:textColor="@color/textSecundary"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:src="@drawable/ic_star"
+                    android:layout_width="@dimen/img_item_location_width"
+                    android:layout_height="@dimen/img_item_location_height" />
+
+                <TextView
+                    android:id="@+id/school_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/exemple_rating"
+                    android:textColor="@color/textSmall"
+                    android:layout_marginLeft="@dimen/text_distance_left"
+                    android:layout_marginRight="@dimen/text_distance_right"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

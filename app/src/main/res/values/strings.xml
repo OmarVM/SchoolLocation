@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Schools Location</string>
+    <string name="app_name_details">School Details</string>
+    <string name="exemple_name">Telesecundaria Miguel Negrete 127</string>
+    <string name="exemple_address">Calle Michoacan, Loma Larga, San José el Vidrio, Méx., México</string>
+    <string name="exemple_rating">7.0</string>
+    <string name="exemple_distance">5.0</string>
+    <string name="exemple_distance_mesure">km</string>
+</resources>
